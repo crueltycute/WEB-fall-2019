@@ -61,7 +61,6 @@ def test_field_with_goods():
             print (g, end=' ')
 
 
-# Реализация задания 1
 if __name__ == "__main__":
     test_gen_random()
 
