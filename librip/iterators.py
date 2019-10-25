@@ -2,6 +2,12 @@
 class Unique(object):
     def __init__(self, items, **kwargs):
         self.items = items
+        print(type(self.items))
+
+        if type(self.items == 'generator'):
+            self.generated_items = self.items
+            print(self.generated_items)
+
         self.limit = len(items)
 
         self.current = 0
@@ -12,6 +18,7 @@ class Unique(object):
             self.unique_dict = dict()
         else:
             self.unique = set()
+
         # Нужно реализовать конструктор
         # В качестве ключевого аргумента, конструктор должен принимать bool-параметр ignore_case,
         # в зависимости от значения которого будут считаться одинаковые строки в разном регистре
@@ -21,20 +28,26 @@ class Unique(object):
 
     def __next__(self):
         if self.ignore_case:
-            if self.items[self.current].lower() in self.unique_dict:
-                while self.items[self.current].lower() in self.unique_dict:
+            while self.items[self.current].lower() in self.unique_dict:
+                if self.current < self.limit:
                     self.current += 1
-                    if self.current + 1 > self.limit:
-                        break
+
+                    if self.current >= self.limit:
+                        raise StopIteration
+                else:
+                    break
 
             self.unique_dict.update({self.items[self.current].lower(): self.items[self.current]})
             return self.items[self.current]
         else:
-            if self.items[self.current] in self.unique:
-                while self.items[self.current] in self.unique:
+            while self.items[self.current] in self.unique:
+                if self.current < self.limit:
                     self.current += 1
-                    if self.current + 1 > self.limit:
-                        break
+
+                    if self.current >= self.limit:
+                        raise StopIteration
+                else:
+                    break
 
             self.unique.add(self.items[self.current])
             return self.items[self.current]
