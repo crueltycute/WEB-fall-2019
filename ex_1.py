@@ -62,13 +62,9 @@ def test_field_with_goods():
 
 
 # Реализация задания 1
-def main():
+if __name__ == "__main__":
     test_gen_random()
 
     print('\n')
 
     test_field_with_goods()
-
-
-if __name__ == "__main__":
-    main()

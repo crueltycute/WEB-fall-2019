@@ -1,5 +1,6 @@
 from librip.decorators import print_result
 
+
 # Необходимо верно реализовать print_result
 # и задание будет выполнено
 
