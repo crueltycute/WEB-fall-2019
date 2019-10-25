@@ -1,3 +1,4 @@
+# coding=utf-8
 from librip.decorators import print_result
 
 
