@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stack Underflow</title>
+    {% load static %}
+    <link href="{% static 'css/bootstrap/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/components/navbar.css' %}" rel="stylesheet">
+    <link href="{% static 'css/components/form.css' %}" rel="stylesheet">
+    <link href="{% static 'css/components/one_question.css' %}" rel="stylesheet">
+</head>
+<body>
+    {% include 'components/navbar.html' %}
+
+    {% block content %}
+    {%  endblock %}
+</body>
+</html>

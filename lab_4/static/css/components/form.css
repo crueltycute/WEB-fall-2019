@@ -1,0 +1,26 @@
+body {
+    background-color: #e2e3e5;
+}
+
+h1 {
+    padding: 10px;
+}
+
+.container-form {
+    background-color: transparent!important;
+}
+
+form {
+    background-color: #ffffff;
+    border-radius: 7px;
+    padding: 12px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05), 0 20px 48px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.form-link {
+    color: #007bff!important;
+}
+
+.btn-form {
+    width: 100%;
+}

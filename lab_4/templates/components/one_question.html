@@ -1,0 +1,22 @@
+<div class="question d-flex flex-row">
+    <div class="d-flex flex-column align-items-center justify-content-around pr-4">
+        <div class="question-votes d-flex flex-column align-items-center p-2">
+            <a class="font-weight-bold">{{ data.answers }}</a>
+            <span class="font-weight-bold">answers</span>
+        </div>
+        {% if data.votes < 0 %}
+            <div class="question-answers question-answers-red d-flex flex-column align-items-center p-2">
+        {% elif data.votes > 0 %}
+            <div class="question-answers question-answers-green d-flex flex-column align-items-center p-2">
+        {% else %}
+            <div class="question-answers d-flex flex-column align-items-center p-2">
+        {% endif %}
+                <a>{{ data.votes }}</a>
+                <span>votes</span>
+            </div>
+    </div>
+    <div class="d-flex flex-column">
+        <a class="question-title" href="{% url 'question' data.id %}">Lorem ipsum</a>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin est neque, egestas vestibulum sapien in, sodales dapibus tortor. Aenean interdum sollicitudin mi, at aliquam diam tincidunt dignissim. Fusce sit amet eros leo. Nunc condimentum risus eu mi bibendum fringilla. Curabitur justo est, ultricies sit amet eleifend non, dapibus ut quam. </span>
+    </div>
+</div>

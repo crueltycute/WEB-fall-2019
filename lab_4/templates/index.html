@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container d-flex flex-column align-items-center py-5" style="min-height: 100vh;">
+    <div class="pt-3">
+        {% for qd in questions_data %}
+            {% include 'components/one_question.html' with data=qd %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
