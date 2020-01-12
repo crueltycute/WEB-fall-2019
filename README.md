@@ -1,4 +1,4 @@
-## Лабораторные работы по курсу РИП
+## Лабораторные работы
 
 * ЛР1 лежит [здесь](https://github.com/crueltycute/my-trello/tree/mind-map)
 * ЛР2 находится в этом репозитории в ветке lab-2 ([ссылка](https://github.com/crueltycute/WEB-fall-2019/tree/lab-2), [отчет](https://github.com/crueltycute/WEB-fall-2019/blob/lab-2/docs/report.pdf))
@@ -10,3 +10,7 @@
 * ЛР8 находится в этом репозитории в ветке lab-8 ([ссылка](https://github.com/crueltycute/WEB-fall-2019/tree/lab-8), [отчет](https://github.com/crueltycute/WEB-fall-2019/blob/lab-8/docs/РИП%20ЛР8%20отчет.pdf))
 
 #### Отчеты к лабам лежат в папках docs в соответствующих ветках
+
+## Рубежные контроли
+
+* РК1 находится в этом репозитории в ветке rk-1 ([ссылка](https://github.com/crueltycute/WEB-fall-2019/tree/rk-1), [отчет](https://github.com/crueltycute/WEB-fall-2019/blob/rk-1/docs/%20РК1.pdf))
