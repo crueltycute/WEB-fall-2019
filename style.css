@@ -1,0 +1,75 @@
+body {
+    height: 100vh;
+    margin: 0!important;
+
+    font-family: sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+
+    color: darkslateblue;
+
+    cursor: default;
+}
+
+.input-row {
+    display: flex;
+    justify-content: center;
+
+    margin: 16px 0;
+}
+
+.input-row input {
+    width: 160px;
+}
+
+.input-row_unlabeled input {
+    width: 100%;
+}
+
+.input-row label {
+    width: 220px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+
+    font-size: 1.2em;
+
+    padding: 0.5em;
+
+    border-radius: 0.6em;
+
+    background-color: darkslateblue;
+    color: white;
+
+    cursor: pointer;
+}
+
+.button-block button:hover {
+    background-color: rgba(107, 89, 152, 0.72);
+}
+
+.button-block button:focus {
+    outline: none;
+}
+
+hr {
+    width: 200px;
+
+    margin-top: 20px;
+}
+
+.plot {
+    width: 240px;
+    height: 240px;
+
+    margin: 0 auto;
+
+    background-color: #ededed;
+}

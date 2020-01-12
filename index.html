@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная 7</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <h1>Plotting</h1>
+
+        <hr>
+
+        <section>
+            <h2>Data</h2>
+            <h3>Interval</h3>
+            <div class="input-row">
+                <label>
+                    From:
+                    <input id="from">
+                </label>
+            </div>
+            <div class="input-row">
+                <label>
+                    To:
+                    <input id="to">
+                </label>
+            </div>
+
+            <h3>Function</h3>
+            <div class="input-row input-row_unlabeled">
+                <label>
+                    <input id="func">
+                </label>
+            </div>
+
+            <button>Submit</button>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Plot</h2>
+            <div class="plot"></div>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
