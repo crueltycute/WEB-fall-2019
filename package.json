@@ -1,0 +1,46 @@
+{
+  "name": "lab-8",
+  "version": "1.0.0",
+  "description": "Лабораторная №8 по курсу РИП ИУ5",
+  "main": "./static/App.js",
+  "scripts": {
+    "start": "node ./static/App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crueltycute/WEB-fall-2019.git"
+  },
+  "author": "crueltycute",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crueltycute/WEB-fall-2019/issues"
+  },
+  "homepage": "https://github.com/crueltycute/WEB-fall-2019#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.6"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-export-default-from": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.3.2",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}

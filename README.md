@@ -1,11 +1,13 @@
-## Лабораторные работы по курсу РИП
+## Лабораторная работа №8. React
 
-* ЛР1 лежит [здесь](https://github.com/crueltycute/my-trello/tree/mind-map)
-* ЛР2 находится в этом репозитории в ветке lab-2 ([ссылка](https://github.com/crueltycute/WEB-fall-2019/tree/lab-2), [отчет](https://github.com/crueltycute/WEB-fall-2019/blob/lab-2/docs/report.pdf))
-* ЛР3 находится в этом репозитории в ветке lab-3 ([ссылка](https://github.com/crueltycute/WEB-fall-2019/tree/lab-3), [отчет](https://github.com/crueltycute/WEB-fall-2019/blob/lab-3/docs/report.pdf))
-* ЛР4 находится в этом репозитории в ветке lab-4 ([ссылка](https://github.com/crueltycute/WEB-fall-2019/tree/lab-4), [отчет](https://github.com/crueltycute/WEB-fall-2019/blob/lab-4/docs/report.pdf))
-* ЛР5 лежит [здесь](https://github.com/crueltycute/tp-1-sem/tree/WEB), отчет по ней находится в этом репозитории в ветке lab-5-6 ([ссылка](https://github.com/crueltycute/WEB-fall-2019/blob/lab-5-6/docs/РИП%20ЛР5%20отчет.pdf))
-* ЛР6 лежит [здесь](https://github.com/crueltycute/tp-1-sem/tree/WEB), отчет по ней находится в этом репозитории в ветке lab-5-6 ([ссылка](https://github.com/crueltycute/WEB-fall-2019/blob/lab-5-6/docs/РИП%20ЛР6%20отчет.pdf))
-* ЛР7 находится в этом репозитории в ветке lab-7 ([ссылка](https://github.com/crueltycute/WEB-fall-2019/tree/lab-7), [отчет](https://github.com/crueltycute/WEB-fall-2019/blob/lab-7/docs/РИП%20ЛР7%20отчет.pdf))
+### Задание и порядок выполнения
+В этой лабораторной работе вы создадите React-приложение. Вам нужно будет создать одну страницу со списком репозиториев на гитхабе.
 
-#### Отчеты к лабам лежат в папках docs в соответствующих ветках
+*Требования к лабораторной работе:*
+1. Настроенный конфиг webpack и babel
+2. React-приложение с одной страницей.
+3. На странице должны отображаться репозитории с github. Репозитории должны загружаться с помощью axios через открытый api гитхаба.
+4. Приложение должно успешно собираться вебпаком
+5. Приложение должно содержать css
+6. Приложение в dev режиме должно обновляться без перезагрузки страницы с помощью webpack-dev-server’а
+7. index.html должен добавляться с помощью HtmlWebpackPlugin
