@@ -1,0 +1,16 @@
+.repo-list {
+    margin: 40px;
+}
+
+.repo-list__header {
+    color: yellow;
+    text-shadow: 0 0 10px wheat;
+
+    text-align: center;
+}
+
+.repo-list__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,7 +1,9 @@
 import React from 'react';
 import axios from 'axios';
 
-import ListItem from './List';
+import './List.css';
+
+import ListItem from '../ListItem/ListItem.js';
 
 export default class List extends React.Component {
     constructor(props) {
@@ -13,7 +15,7 @@ export default class List extends React.Component {
         }
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.initReposList();
     }
 
@@ -21,20 +23,18 @@ export default class List extends React.Component {
         axios.get('https://api.github.com/users/' + this.state.username + '/repos')
             .then(res => {
                 this.state.reposList = res.data.map(repo => {
-                    return { id: repo.id, value: repo.name }
+                    return <ListItem key={ repo.id } value={ repo.name }/>;
                 });
+                this.setState(this.state.reposList);
             });
     }
 
     render() {
         return (
-            <div>
-                <h1>{ this.props.username }'s repos:</h1>
-                <ul>
-                    { this.state.reposList.map(repo => {
-                            <ListItem value={repo}/>
-                        })
-                    }
+            <div className={'repo-list'}>
+                <h1 className={'repo-list__header'}>{ this.props.username }'s repos:</h1>
+                <ul className={'repo-list__content'}>
+                    { this.state.reposList }
                 </ul>
             </div>
         );

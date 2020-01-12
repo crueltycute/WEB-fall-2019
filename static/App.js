@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import List from './components/List/';
+import List from './components/List/List.js';
+
+import './css/style.css';
 
 const USERNAME = 'crueltycute';
 

@@ -24,5 +24,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./static/index.html"
         })
-    ]
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, "dist"),
+        compress: true,
+        port: 9000,
+        watchContentBase: true,
+        progress: true
+    },
 };
