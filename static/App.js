@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import List from 'List/List';
+import List from './components/List/';
 
 const USERNAME = 'crueltycute';
 
-ReactDOM.render(<List username={USERNAME}/>, document.getElementById('root'));
-
-
+const element = <List username={USERNAME} />;
+ReactDOM.render(element, document.getElementById('root'));
