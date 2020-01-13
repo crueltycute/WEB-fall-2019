@@ -14,3 +14,4 @@
 ## Рубежные контроли
 
 * РК1 находится в этом репозитории в ветке rk-1 ([ссылка](https://github.com/crueltycute/WEB-fall-2019/tree/rk-1), [отчет](https://github.com/crueltycute/WEB-fall-2019/blob/rk-1/docs/%20РК1.pdf))
+* РК2 находится в этом репозитории в ветке rk-2 ([ссылка](https://github.com/crueltycute/WEB-fall-2019/tree/rk-2), [отчет](https://github.com/crueltycute/WEB-fall-2019/blob/rk-2/docs/%20РК2.pdf))
