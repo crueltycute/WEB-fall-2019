@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <ol>
+    {% for b in browsers %}
+        {{ b }}
+    {% endfor %}
+    </ol>
+{% endblock %}
