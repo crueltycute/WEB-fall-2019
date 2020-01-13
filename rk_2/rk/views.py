@@ -11,9 +11,6 @@ def index(request):
     for c in computers:
         browsers.append(get_browsers_by_computer(c))
 
-    print(computers)
-    print(browsers)
-
     context = {
         'browsers': browsers
     }

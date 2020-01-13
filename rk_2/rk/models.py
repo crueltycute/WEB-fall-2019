@@ -10,9 +10,7 @@ class Computer(models.Model):
 
 
 def get_computers():
-    computers = Computer.objects.all()
-
-    return computers
+    return Computer.objects.all()
 
 
 class Browser(models.Model):

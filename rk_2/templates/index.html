@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <ol>
+    <ul>
     {% for b in browsers %}
-        {{ b }}
+        {% for kek in b %}
+            <li>
+                <b>{{ kek.computer }}</b>
+                <div>browser: {{ kek.name }} ({{ kek.engine }})</div>
+            </li>
+        {% endfor %}
     {% endfor %}
-    </ol>
+    </ul>
 {% endblock %}
